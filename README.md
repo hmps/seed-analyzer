@@ -46,17 +46,47 @@ UV is a tool that manages Python packages. To install it:
    ```
 3. Wait for it to finish (you'll see some download progress)
 
-### Step 3: Download and Set Up Seed Analyzer
+### Step 3: Download Seed Analyzer
 
-1. Download this project folder to your computer
-2. Open Command Prompt
-3. Navigate to the project folder. For example, if you saved it to your Downloads:
-   ```
-   cd C:\Users\YourName\Downloads\seeds
-   ```
-   (Replace `YourName` with your actual Windows username)
+You have two options to download the software:
 
-4. Install the required packages by running:
+#### Option A: Download as ZIP (Easiest)
+
+1. Go to the GitHub repository: **https://github.com/hmps/seed-analyzer**
+2. Click the green **"Code"** button near the top-right
+3. Click **"Download ZIP"**
+4. Open your Downloads folder and find the file `seed-analyzer-main.zip`
+5. Right-click it and select **"Extract All..."**
+6. Choose where to extract (e.g., `C:\Users\YourName\Documents\seed-analyzer`)
+7. Click **"Extract"**
+
+#### Option B: Clone with Git (For those familiar with Git)
+
+If you have Git installed, you can clone the repository:
+
+1. Open Command Prompt
+2. Navigate to where you want to save the project:
+   ```
+   cd C:\Users\YourName\Documents
+   ```
+3. Clone the repository:
+   ```
+   git clone https://github.com/hmps/seed-analyzer.git
+   ```
+4. This creates a `seed-analyzer` folder with all the files
+
+> **Don't have Git?** Download it from https://git-scm.com/download/win (but Option A works fine without it)
+
+### Step 4: Install Dependencies
+
+1. Open Command Prompt
+2. Navigate to the project folder. For example:
+   ```
+   cd C:\Users\YourName\Documents\seed-analyzer
+   ```
+   (Adjust the path to where you extracted/cloned the files)
+
+3. Install the required packages by running:
    ```
    uv sync
    ```
@@ -71,7 +101,7 @@ UV is a tool that manages Python packages. To install it:
 1. Open Command Prompt
 2. Navigate to the project folder:
    ```
-   cd C:\Users\YourName\Downloads\seeds
+   cd C:\Users\YourName\Documents\seed-analyzer
    ```
 3. Start the server:
    ```
@@ -205,13 +235,13 @@ The table at the bottom shows measurements for each detected seed:
 **One-time setup** (only do this once):
 ```
 pip install uv
-cd C:\path\to\seeds
+cd C:\path\to\seed-analyzer
 uv sync
 ```
 
 **Start the analyzer** (do this each time you want to use it):
 ```
-cd C:\path\to\seeds
+cd C:\path\to\seed-analyzer
 uv run uvicorn seed_analyzer.main:app --host 127.0.0.1 --port 8000
 ```
 
@@ -228,7 +258,7 @@ The setup is similar, but use Terminal instead of Command Prompt:
 pip3 install uv
 
 # Navigate to project
-cd /path/to/seeds
+cd /path/to/seed-analyzer
 
 # Install dependencies
 uv sync
