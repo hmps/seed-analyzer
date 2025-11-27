@@ -35,6 +35,7 @@ htmlcov
 .beads
 tests
 *.md
+!README.md
 LICENSE
 
 # Docker

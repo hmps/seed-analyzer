@@ -38,7 +38,7 @@ WORKDIR /app
 COPY --from=builder /app/.venv /app/.venv
 
 # Copy project files
-COPY pyproject.toml uv.lock ./
+COPY pyproject.toml uv.lock README.md ./
 COPY src/ ./src/
 
 # Install the project itself
