@@ -162,7 +162,7 @@ The table at the bottom shows measurements for each detected seed:
 - **Width**: Minor axis in mm
 - **Aspect Ratio**: Length / Width
 - **Shape**: Classification (circular/oval/elongated)
-- **Area**: Calculated area in mm²
+- **Area**: Calculated area in mmï¿½
 
 ---
 
@@ -246,10 +246,15 @@ For those interested in how it works:
 - **Grid Detection**: Uses Hough Line Transform to detect grid lines and calculate pixels-per-millimeter calibration
 - **Seed Segmentation**: Combines Otsu's thresholding with adaptive thresholding; uses watershed algorithm to separate touching seeds
 - **Measurement**: Fits ellipses to seed contours to measure major/minor axes
-- **Limits**: Maximum individual seed length of 6mm and area of 12mm² (larger objects are assumed to be multiple merged seeds and are either split or filtered out)
+- **Limits**: Maximum individual seed length of 6mm and area of 12mmï¿½ (larger objects are assumed to be multiple merged seeds and are either split or filtered out)
 
 ---
 
 ## License
 
-MIT License - feel free to use and modify for your needs.
+This software is licensed under the **Polyform Noncommercial License 1.0.0**.
+
+- **Personal use**: Free for personal projects, research, education, and non-commercial purposes
+- **Commercial use**: Requires a separate commercial license - contact the author
+
+See the [LICENSE](LICENSE) file for full terms.
