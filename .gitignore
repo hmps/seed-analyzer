@@ -34,3 +34,5 @@ Thumbs.db
 *.png
 !tests/fixtures/images/*.jpg
 !tests/fixtures/images/*.png
+
+.claude/settings.local.json
